@@ -209,3 +209,22 @@ footer > a:active{
 strong{
     color: #195B38;
 }
+@media (max-width: 500px){
+    header{
+        margin-top: 30px;
+    }
+    nav{
+        position: fixed;
+        top: 0px;
+        font-size: 0.6em;
+        width: 100%;
+        text-align: center;
+
+    }
+    section ul{
+        columns: 1;
+    }
+    footer{
+        font-size: 0.8em;
+    }
+}
