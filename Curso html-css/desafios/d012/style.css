@@ -71,7 +71,7 @@ main p{
     background-image: url(imagens/background001.jpg);
     background-attachment: fixed, scroll;
     background-size: cover;
-    background-position: bottom right;
+    background-position: 60% 100%;
     padding: 60px 40px;
     box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.604);
 }
