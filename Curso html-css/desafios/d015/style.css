@@ -82,7 +82,7 @@ menu button:not(:hover){
 }
 
 menu button:active{
-    transform: scale(1);
+    transform: scale(1.1);
     transition: all 0.150s ease-in-out;
 }
 
@@ -97,6 +97,9 @@ menu button:active{
 }
 #instagram{
     background-image: url(imagens/logo-instagram.jpg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center center;
 }
 #twitter{
     background-image: url(imagens/logo-twitter.jpg);
