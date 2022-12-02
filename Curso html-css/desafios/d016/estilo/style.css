@@ -13,6 +13,14 @@
     display: none;
 }
 
+@keyframes aparecer {
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 102px;
+    }
+}
 
 *{
     font: normal normal 0.95em var(--font_titulo);
@@ -67,8 +75,12 @@ div#menu-button:active{
 
 nav{
     padding: 2px;
-    border-top: 1px solid var(--cor3);
-    display: none;
+    background-color: var(--cor1);
+    border-bottom: 2px solid var(--cor3);
+    z-index: -1;
+    width: 100vw;
+    position: absolute;
+    top: -100px;
 }
 
 a{
@@ -97,12 +109,8 @@ a:not(:active){
     transition: text 0.05s ease-in-out;
 }
 
-div#active-menu-button{
-    width: fit-content;
-    margin: auto;
+div#menu-button:hover ~ nav{
+    animation: aparecer 1s both;
+    animation-delay: 2px;
 }
-header > menu > div#active-menu-button:active nav{
-    display: block;
-    width: 100vw;
-    transition-duration: 10s;
-}
+
