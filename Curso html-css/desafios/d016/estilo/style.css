@@ -46,9 +46,8 @@ div#menu-button{
     font: 700 normal 1.6em var(--font_titulo);
     width: fit-content;
     margin: auto;
-    margin-bottom: 3px;
+    margin-bottom: 1px;
     padding: 0px 15px;
-    padding-bottom: 5px;
     border-radius: 10px;
     cursor: pointer;
     display: block;
