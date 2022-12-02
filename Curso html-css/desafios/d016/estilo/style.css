@@ -13,14 +13,6 @@
     display: none;
 }
 
-@keyframes aparecer {
-    0%{
-        top: -100px;
-    }
-    100%{
-        top: 102px;
-    }
-}
 
 *{
     font: normal normal 0.95em var(--font_titulo);
@@ -75,12 +67,9 @@ div#menu-button:active{
 
 nav{
     padding: 2px;
-    background-color: var(--cor1);
-    border-bottom: 2px solid var(--cor3);
-    z-index: -1;
+    border-top: 1px solid var(--cor3);
     width: 100vw;
-    position: absolute;
-    top: -100px;
+    display: none;
 }
 
 a{
@@ -109,8 +98,7 @@ a:not(:active){
     transition: text 0.05s ease-in-out;
 }
 
-div#menu-button:hover ~ nav{
-    animation: aparecer 1s both;
-    animation-delay: 2px;
+div#menu-button:hover ~ nav, nav:hover{
+    display: block;
 }
 
