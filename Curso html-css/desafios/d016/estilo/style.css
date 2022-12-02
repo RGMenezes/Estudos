@@ -20,7 +20,7 @@
     padding: 0px;
 }
 
-body{
+html{
     width: 100vw;
 }
 
@@ -99,7 +99,7 @@ a:not(:active){
     transition: text 0.05s ease-in-out;
 }
 
-div#menu-button:hover ~ nav, nav:hover{
+div#menu-button:hover ~  nav, nav:hover{
     display: block;
 }
 
