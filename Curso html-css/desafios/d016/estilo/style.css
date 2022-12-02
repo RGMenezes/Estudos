@@ -15,7 +15,7 @@
 
 
 *{
-    font: normal normal 0.95em var(--font_titulo);
+    font: normal normal 1em var(--font_titulo);
     margin: 0px;
     padding: 0px;
 }
@@ -33,7 +33,7 @@ header{
 }
 
 h1{
-    font: 700 normal 1.5em var(--font_titulo);
+    font: 700 normal 1.6em var(--font_titulo);
     text-align: center;
     padding: 10px 0px;
 }
@@ -43,9 +43,10 @@ menu{
 }
 
 div#menu-button{
-    font: 700 normal 2em var(--font_titulo);
+    font: 700 normal 1.6em var(--font_titulo);
     width: fit-content;
     margin: auto;
+    margin-bottom: 3px;
     padding: 0px 15px;
     padding-bottom: 5px;
     border-radius: 10px;
@@ -73,7 +74,7 @@ nav{
 }
 
 a{
-    font: normal normal 1.1em var(--font_titulo);
+    font: normal normal 1em var(--font_titulo);
     display: block;
     color: var(--cor3);
     margin: 2px;
@@ -100,5 +101,15 @@ a:not(:active){
 
 div#menu-button:hover ~ nav, nav:hover{
     display: block;
+}
+
+main{
+    width: 90vw;
+    margin: 20px auto;
+}
+
+p{
+    text-align: justify;
+    line-height: 2em;
 }
 
