@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@keyframes animacao01 {
+    0%{
+        color: var(--cor2);
+    }
+    25%{
+        color: var(--cor3);
+    }
+    50%{
+        color: var(--cor2);
+    }
+    75%{
+        color: var(--cor3);
+    }
+
+}
+
+:root{
+    --cor1: rgb(64, 0, 94);
+    --cor2: rgb(104, 206, 224);
+    --cor3: rgb(122, 90, 173);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: grid;
+    grid-template-rows: 30% auto;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+#img-login{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: grey;
+    background-image: url(../imagens/img_formulario.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#area-dados{
+    font: normal normal 0.9em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+
+#area-dados h1{
+    font: 900 normal 2.1em 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: var(--cor2);
+    text-shadow: 1px 1px 2px black;
+    padding: 5px;
+}
+
+#area-dados p{
+    margin-bottom: 15px;
+}
+
+.preencher{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    margin: 5px 3px;
+    height: 35px;
+    border-radius: 13px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: right;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.preencher input{
+    background-color: var(--cor2);
+    border: none;
+    height: 29px;
+    margin-right: 3px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-indent: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.preencher:hover{
+    color: var(--cor3);
+    transition: all 0.3s ease-in-out;
+}
+.preencher:hover input{
+    background-color: var(--cor3);
+    transition: all 0.3s ease-in-out;
+}
+label:active{
+    transform: scale(0.9);
+}
